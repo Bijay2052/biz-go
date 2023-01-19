@@ -1,6 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"rsc.io/quote"
+)
+
 func main() {
-    fmt.Println("Hello World!!, Welcome to Bijay's first go project")
+    fmt.Println("Hello Bijay, This is a quote from go for you: ", quote.Go())
 }
