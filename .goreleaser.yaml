@@ -30,8 +30,8 @@ brews:
     name: bizgo
     homepage: "https://github.com/Bijay2052/biz-go"
     tap:
-      owner: bijay2052
-      name: homebrew-bizgo
+      owner: Bijay2052
+      name: biz-go
 
 checksum:
   name_template: 'checksums.txt'
