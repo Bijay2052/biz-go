@@ -5,11 +5,11 @@
 class Bizgo < Formula
   desc ""
   homepage "https://github.com/Bijay2052/biz-go"
-  version "0.0.4"
+  version "1.0.1"
 
   on_macos do
-    url "https://github.com/Bijay2052/biz-go/releases/download/v0.0.4/biz-go_0.0.4_darwin_all.tar.gz"
-    sha256 "ec2a35ca6d150684dfba1f6a6ed77423583daa289e48fa83e1d26c9724a43bd0"
+    url "https://github.com/Bijay2052/biz-go/releases/download/v1.0.1/biz-go_1.0.1_darwin_all.tar.gz"
+    sha256 "4da6abb083bd36926a2e755a59373e9d6ab8bf65d747ddfc73822360fc487bd8"
 
     def install
       bin.install "biz-go"
@@ -18,19 +18,19 @@ class Bizgo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Bijay2052/biz-go/releases/download/v0.0.4/biz-go_0.0.4_linux_arm64.tar.gz"
-      sha256 "4080879a4d950e8a422ab36f5b1f54ffc1861e2ac25247eb2c0ce8ee8554721a"
+      url "https://github.com/Bijay2052/biz-go/releases/download/v1.0.1/biz-go_1.0.1_linux_arm64.tar.gz"
+      sha256 "a44839cafb3c8d7f4ca9758e37821378875924fa463e8ec85d615ab062ba83a1"
 
       def install
-        bin.install "mediumautopost"
+        bin.install "bizgo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Bijay2052/biz-go/releases/download/v0.0.4/biz-go_0.0.4_linux_amd64.tar.gz"
-      sha256 "690c2140e1b648d884cfd37164a8e49e541ddb28c7cf7a591cb5c5f38ad48608"
+      url "https://github.com/Bijay2052/biz-go/releases/download/v1.0.1/biz-go_1.0.1_linux_amd64.tar.gz"
+      sha256 "e7de57e7f281afc86f70319efaf0d76777a7fc6dfb21ad9825884750ad2921bb"
 
       def install
-        bin.install "mediumautopost"
+        bin.install "bizgo"
       end
     end
   end
