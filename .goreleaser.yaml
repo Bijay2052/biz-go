@@ -6,8 +6,9 @@ before:
     - go mod tidy
     # you may remove this if you don't need go generate
     - go generate ./...
+
 builds:
-  - binary: mediumautopost
+  - binary: bizgo
     goos:
       - darwin
       - linux
@@ -31,7 +32,7 @@ brews:
     homepage: "https://github.com/Bijay2052/biz-go"
     tap:
       owner: Bijay2052
-      name: biz-go
+      name: homebrew-Bijay2052
 
 checksum:
   name_template: 'checksums.txt'
